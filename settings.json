@@ -1,0 +1,249 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/krittapas/Project/horoacademy-frontend/store/**)",
+      "Read(//Users/krittapas/Project/horoacademy-frontend/components/dailyHoro/**)",
+      "Read(//Users/krittapas/Project/horoacademy-frontend/components/home/**)",
+      "Read(//Users/krittapas/Project/horoacademy-frontend/pages/**)",
+      "Read(//Users/krittapas/Project/horoacademy-frontend/**)",
+      "Bash(1:*)",
+      "Bash(python3 -c \"import sys,json; lines=[l.strip\\(\\) for l in sys.stdin if l.strip\\(\\)]; [print\\(json.loads\\(l\\).get\\(''message'',''''\\),json.loads\\(l\\).get\\(''context'',{}\\).get\\(''exception'',{}\\).get\\(''message'',''''\\)\\) for l in lines if l.startswith\\(''{''\\)]\")",
+      "Bash(grep -E \"\\\\.\\(js|ts|jsx|tsx\\)$\")",
+      "Bash(grep -r \"$fetch\\\\|useFetch\" /Users/krittapas/Project/horoacademy-wpe-frontend --include=\"*.vue\" --include=\"*.ts\" --exclude-dir=node_modules --exclude-dir=.nuxt)",
+      "Read(//Users/krittapas/Project/horoacademy-backoffice/$2 ~ /^[0-9]+$/**)",
+      "Bash(awk 'NR>=9561 && NR<=11000 && /^function / && NR > 9562' /Users/krittapas/Project/horoacademy-backoffice/app/helpers.php)",
+      "Bash(awk 'NR>=9561 && NR<=11000 && /^function getHoroMonth/' /Users/krittapas/Project/horoacademy-backoffice/app/helpers.php)",
+      "Bash(ls -la /Users/krittapas/Project/horoacademy-frontend/pages/*.vue)",
+      "Bash(grep -r \"$axios\\\\|$fetch\" /Users/krittapas/Project/horoacademy-frontend/pages --include=\"*.vue\")",
+      "Bash(grep -r \"this\\\\.$axios\\\\|this\\\\.$http\" /Users/krittapas/Project/horoacademy-frontend/pages --include=\"*.vue\")",
+      "Bash(grep -r \"$axios\\\\.\\\\\\(get\\\\|post\\\\|put\\\\|delete\\\\\\)\" /Users/krittapas/Project/horoacademy-frontend/components --include=\"*.vue\")",
+      "Read(//Users/krittapas/Project/**)",
+      "Read(//Users/krittapas/**)",
+      "Bash(yarn lintfix:*)",
+      "Bash(yarn lint:fix)",
+      "Bash(grep -n \"permissionActions\" /Users/krittapas/Project/horoacademy-wpe-frontend/pages/information-link/[slug].vue -A 5)",
+      "Bash(xargs ls -la)",
+      "Bash(docker ps --format \"{{.Names}}\\\\t{{.Status}}\")",
+      "Bash(find /Users/krittapas/Project/horoacademy-backoffice -name *Task* -o -name *task*)",
+      "Bash(find /Users/krittapas/Project/horoacademy-backoffice/app -name Admin* -o -name admin*)",
+      "Bash(composer show:*)",
+      "Bash(composer require:*)",
+      "Bash(for pkg:*)",
+      "Bash(do echo:*)",
+      "Read(//Users/krittapas/Project/horoacademy-backoffice/**)",
+      "Bash(head -20 grep -rn \"facebook\\\\|messenger\\\\|psid\" /Users/krittapas/Project/horoacademy-backoffice/database/migrations -l)",
+      "Bash(head -10 grep -n \"line_profile_id\\\\|facebook\" /Users/krittapas/Project/horoacademy-backoffice/database/migrations -r)",
+      "Bash(grep -rn task/today /Users/krittapas/Project/horoacademy-wpe-frontend --include=*.js --include=*.ts --include=*.jsx --include=*.tsx)",
+      "Bash(grep -rn \"task/today\\\\|days.*parameter\" /Users/krittapas/Project/horoacademy-wpe-frontend --include=*.js --include=*.ts --include=*.jsx --include=*.tsx)",
+      "Bash(grep -rn days /Users/krittapas/Project/horoacademy-wpe-frontend --include=*.ts --include=*.tsx --include=*.js --include=*.jsx)",
+      "Bash(find /Users/krittapas/Project/horoacademy-wpe-frontend -type d -name \"services\\\\|composables\\\\|api\" -not -path \"*/node_modules/*\")",
+      "Bash(grep -rn days /Users/krittapas/Project/horoacademy-wpe-frontend/pages --include=*.ts --include=*.tsx --include=*.vue)",
+      "Bash(find /Users/krittapas/Project/horoacademy-wpe-service -type f -name *.php ! -path */vendor/*)",
+      "Bash(find /Users/krittapas/Project/horoacademy-wpe-frontend/components -iname *todo*input* -o -iname *input*todo*)",
+      "Bash(find /Users/krittapas/Project/horoacademy-wpe-frontend -type f -name *kuay* -o -name *64* -o -name *calendar*)",
+      "Bash(grep -r \"64 ข่วย\\\\|64ข่วย\" /Users/krittapas/Project/horoacademy-wpe-frontend --include=*.vue --include=*.ts --include=*.js)",
+      "Bash(grep -r \"filter.*modal\\\\|modal.*filter\" /Users/krittapas/Project/horoacademy-wpe-frontend --include=*.vue)",
+      "Bash(wc -l /Users/krittapas/Project/horoacademy-wpe-frontend/pages/information-link/[slug].vue)",
+      "Bash(find /Users/krittapas/Project -type f -path *calendar*)",
+      "Bash(grep -r \"สาขา\\\\|ท้องถิ่น\\\\|ชั้นสูง\\\\|ชั้นต่ำ\" /Users/krittapas/Project/horoacademy-wpe-frontend --include=*.vue --include=*.ts)",
+      "Bash(grep -r \"form.*filter\\\\|filter.*form\" /Users/krittapas/Project/horoacademy-wpe-frontend --include=*.vue)",
+      "Bash(grep -r \"sixty-fourkuay\\\\|sixty_fourkuay\" /Users/krittapas/Project/horoacademy-wpe-frontend --include=*.vue --include=*.ts)",
+      "Bash(find /Users/krittapas/Project/horoacademy-frontend -name *FilterSixtyFourForm* -o -name *sixtyFour*)",
+      "Bash(find /Users/krittapas/Project -name *SixtyFour* -o -name *Filter*Form*)",
+      "Bash(find /Users/krittapas/Project/horoacademy-wpe-frontend -name types* -o -name types -type d)",
+      "Bash(find /Users/krittapas/Project/horoacademy-wpe-service/vendor/topkstt -name *.php)",
+      "Bash(find /Users/krittapas/Project/horoacademy-wpe-service/vendor/topkstt -name *PostalCode*Controller*)",
+      "Bash(xargs cat:*)",
+      "Bash(ls /Users/krittapas/Project/horoacademy-backoffice/*.md)",
+      "Bash(grep -n \"setLoading\\\\|setLoaded\" /Users/krittapas/Project/horoacademy-frontend/plugins/*.js)",
+      "Bash(grep -r \"ceremony\\\\|ceremonial\" /Users/krittapas/Project/horoacademy-wpe-frontend --include=*.vue --include=*.ts -l)",
+      "Bash(grep -r \"แชกี\\\\|เตรียมข้อมูล\\\\|รหัสคน\\\\|รหัสทิศ\" /Users/krittapas/Project/horoacademy-wpe-frontend --include=*.vue -B 2 -A 2)",
+      "Bash(grep -r \"ceremony\\\\|พิธี\" /Users/krittapas/Project/horoacademy-wpe-frontend/components --include=*.vue -l)",
+      "Bash(find /Users/krittapas/Project/horoacademy-backoffice -type f -name *saki* -o -name *ceremony*)",
+      "Bash(grep -r \"person_code\\\\|direction_code\" /Users/krittapas/Project/horoacademy-backoffice --include=*.php -l)",
+      "Bash(grep -r \"person_code\\\\|direction_code\\\\|degree\" /Users/krittapas/Project/horoacademy-backoffice/app/Http/Controllers --include=*.php)",
+      "Bash(grep -r person_code /Users/krittapas/Project/horoacademy-backoffice --include=*.php)",
+      "Bash(grep -r direction_code /Users/krittapas/Project/horoacademy-backoffice --include=*.php)",
+      "Bash(find /Users/krittapas/Project/horoacademy-backoffice -type f -name *[Ss]aki*)",
+      "Bash(grep -l \"content\\\\|highlight_note\" /Users/krittapas/Project/horoacademy-wpe-service/database/migrations/*.php)",
+      "Bash(grep -n \"\\\\[\" /Users/krittapas/Project/horoacademy-wpe-frontend/components/task/task-lists/view/*.vue)",
+      "Bash(find /Users/krittapas/Project/horoacademy-wpe-frontend/components/task/task-lists -type f -name *.vue -o -name *.ts -o -name *.tsx -o -name *.js)",
+      "Bash(node -e \"const d = require\\(''''/Users/krittapas/Project/horoacademy-frontend/data/compass.js''''\\); const k = d.sixtyFourKuay; console.log\\(JSON.stringify\\(k, null, 2\\)\\)\")",
+      "Bash(node -e \":*)",
+      "Bash(grep -r \"viewInformation\\\\|view-information\\\\|ViewInformation\" /Users/krittapas/Project/horoacademy-wpe-frontend --include=*.vue -l)",
+      "Bash(grep -r \"SahaInformation\\\\|64.*ข่วย\\\\|lerk\\\\|person_code\" /Users/krittapas/Project/horoacademy-wpe-frontend/pages --include=*.vue -l)",
+      "Bash(grep -rn \"SahaInformation\\\\|saha-information\" /Users/krittapas/Project/horoacademy-wpe-frontend/pages --include=*.vue)",
+      "Bash(find /Users/krittapas/Project/horoacademy-wpe-frontend -name *saki* -o -name *Saki*)",
+      "Bash(find /Users/krittapas/Project/horoacademy-wpe-frontend/components -name ViewInformation*)",
+      "Bash(grep -rn \"kuay\\\\|bon.*lang\\\\|calculateKuay\" /Users/krittapas/Project/horoacademy-wpe-frontend --include=*.ts --include=*.js --include=*.vue)",
+      "Bash(grep -rn \"saha.*sixty.*four\\\\|sixty.*four\\\\|64.*kuay\" /Users/krittapas/Project --include=*.php --include=*.ts --include=*.js)",
+      "Bash(find /Users/krittapas/Project/horoacademy-frontend -type f \\\\\\(-name *.ts -o -name *.js \\\\\\) -path *api*)",
+      "Bash(gh pr:*)",
+      "Bash(git -C /Users/krittapas/Project/horoacademy-frontend show bc4bfad -- components/dailyHoro/DailyHoroData.vue)",
+      "Bash(git -C /Users/krittapas/Project/horoacademy-frontend diff bc4bfad~1 bc4bfad -- components/dailyHoro/DailyHoroData.vue)",
+      "Bash(git -C /Users/krittapas/Project/horoacademy-frontend log --all --oneline -20 -- components/dailyHoro/DailyHoroData.vue)",
+      "Bash(git -C /Users/krittapas/Project/horoacademy-frontend show a3f2b48 -- components/dailyHoro/DailyHoroData.vue)",
+      "Bash(git -C /Users/krittapas/Project/horoacademy-frontend show 83a2d26:components/dailyHoro/DailyHoroData.vue)",
+      "Bash(grep \"\\\\.php$\")",
+      "Bash(__NEW_LINE_2fa24e928bac69ad__ python3:*)",
+      "Bash(git -C /Users/krittapas/Project/horoacademy-backoffice show 2049bcbc --stat)",
+      "Bash(git -C /Users/krittapas/Project/horoacademy-backoffice show 2049bcbc)",
+      "WebFetch(domain:x.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(npm i:*)",
+      "Bash(sudo npm:*)",
+      "Bash(npm config:*)",
+      "Bash(export PATH=\"$HOME/.npm-global/bin:$PATH\")",
+      "Bash(omc --help)",
+      "Bash(omc install:*)",
+      "Bash(git log:*)",
+      "Bash(grep -r \"LIFF\\\\|liff\\\\|LINE\" /Users/krittapas/Project/horoacademy-wpe-frontend --include=*.vue --include=*.ts --include=*.js)",
+      "Bash(grep -r \"/me\\\\|/api/me\" /Users/krittapas/Project/horoacademy-wpe-frontend --include=*.vue --include=*.ts --include=*.js)",
+      "Bash(grep -r \"api.auth\\\\|auth.login\\\\|/auth/\" /Users/krittapas/Project/horoacademy-wpe-frontend --include=*.vue --include=*.ts --include=*.js)",
+      "Bash(grep -r \"window.liff\\\\|liff.init\" /Users/krittapas/Project/horoacademy-wpe-frontend --include=*.vue --include=*.ts --include=*.js)",
+      "Bash(npm install:*)",
+      "Bash(find /Users/krittapas/Project/horoacademy-backoffice -type f -name .env*)",
+      "Bash(grep -r process.env /Users/krittapas/Project/horoacademy-frontend --include=*.js --include=*.vue --include=*.json)",
+      "Bash(grep -r \"LIFF_ID\\\\|TRANSFER_LIFF_ID\\\\|CLIENT_ID\" /Users/krittapas/Project/horoacademy-frontend --include=*.vue --include=*.js)",
+      "Bash(find /Users/krittapas/Project/horoacademy-backoffice -type f -name *auth* -o -name *login*)",
+      "mcp__db-wpe__query",
+      "Bash(grep -r \"bindDuang\\\\|ผูกดวง\" /Users/krittapas/Project/horoacademy-wpe-frontend --include=*.vue --include=*.ts --include=*.js)",
+      "Bash(grep -r \"ข้อมูลผูกดวง\\\\|tab.*duang\\\\|duang.*tab\" /Users/krittapas/Project/horoacademy-wpe-frontend --include=*.vue --include=*.ts)",
+      "Bash(grep -n \"const { data, pending, error }\\\\|watch\\\\|onMounted\" /Users/krittapas/Project/horoacademy-wpe-frontend/components/userSlideover/SahaInformation.vue)",
+      "Bash(grep -r \"ไม่สามารถดึงข้อมูลได้\\\\|ไม่มีข้อมูลวันเกิด\" /Users/krittapas/Project --include=*.php --include=*.vue --include=*.ts)",
+      "Bash(grep -r \"no.*birthdate.*data\\\\|missing.*birth\" /Users/krittapas/Project/horoacademy-backoffice --include=*.php)",
+      "Bash(grep -A 30 \"occasion_type === ''birthday''\" /Users/krittapas/Project/horoacademy-wpe-service/app/Http/Controllers/API/UserController.php)",
+      "Bash(grep -r \"ModalTaskView\\\\|occasion-view\" /Users/krittapas/Project/horoacademy-wpe-frontend/components --include=*.vue --include=*.ts)",
+      "Bash(npx vue-tsc:*)",
+      "Bash(git show:*)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(php artisan:*)",
+      "WebSearch",
+      "Bash(npm update:*)",
+      "Bash(npm list:*)",
+      "Bash(git branch:*)",
+      "Bash(git fetch:*)",
+      "Bash(ls -d /Users/krittapas/Project/megawecare-wpe-frontend/components/*/)",
+      "Bash(ls -d /Users/krittapas/Project/megawecare-wpe-frontend/pages/*/)",
+      "Bash(git remote:*)",
+      "Bash(node server.js)",
+      "Bash(curl -s http://localhost:8080)",
+      "Bash(python3 -c ':*)",
+      "mcp__github__get_pull_request",
+      "mcp__github__get_pull_request_files",
+      "Bash(python3 -m json.tool)",
+      "Bash(claude mcp:*)",
+      "Bash(mysql --version)",
+      "Bash(mysql -h 27.254.42.42 -u dmg -p'dmg@xena1' -e \"SHOW DATABASES;\")",
+      "Bash(rm -f /Users/krittapas/Project/fairy-api/.omc/state/autopilot-state.json)",
+      "Bash(rm -f /Users/krittapas/Project/fairy-api/.omc/state/ralph-state.json)",
+      "Bash(rm -f /Users/krittapas/Project/fairy-api/.omc/state/skill-active-state.json)",
+      "Bash(mysql -u root -p'password' fairly_db_local -e \"SELECT COUNT\\(*\\) as total, COUNT\\(lat\\) as with_coords FROM master_customers WHERE deleted_at IS NULL;\")",
+      "Bash(curl -s \"http://localhost:3010/api/master/depots\")"
+    ],
+    "defaultMode": "bypassPermissions",
+    "additionalDirectories": [
+      "/Users/krittapas/Project/horoacademy-backoffice/app/Http/Controllers/API",
+      "/Users/krittapas/Project/horoacademy-backoffice/routes",
+      "/Users/krittapas/Project/horoacademy-wpe-frontend/components/userSlideover",
+      "/Users/krittapas/Project/horoacademy-wpe-frontend/components/task/task-lists",
+      "/Users/krittapas/Project/horoacademy-wpe-frontend/pages/information-link",
+      "/Users/krittapas/Project/horoacademy-wpe-frontend/components",
+      "/Users/krittapas/Project/horoacademy-wpe-frontend/pages/task-list",
+      "/Users/krittapas/Project/horoacademy-wpe-service/app/Http/Resources/API",
+      "/Users/krittapas/Project/horoacademy-wpe-frontend/types",
+      "/Users/krittapas/Project/horoacademy-wpe-frontend/composables",
+      "/Users/krittapas/Project/horoacademy-wpe-service/app/Services",
+      "/Users/krittapas/Project/horoacademy-wpe-service/docs",
+      "/Users/krittapas/Project/horoacademy-wpe-frontend/plugins",
+      "/Users/krittapas/Project/horoacademy-wpe-service/database/migrations",
+      "/Users/krittapas/Project/horoacademy-wpe-service/app/Http/Controllers/API",
+      "/Users/krittapas/Project/horoacademy-wpe-service/routes",
+      "/Users/krittapas/Project/horoacademy-frontend/components",
+      "/tmp",
+      "/Users/krittapas",
+      "/Users/krittapas/.claude/projects/-Users-krittapas",
+      "/Users/krittapas/Project/fairy-api/.omc/state/sessions/*"
+    ]
+  },
+  "model": "sonnet",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_CONFIG_DIR:-$HOME/.claude}/hooks/keyword-detector.mjs\""
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_CONFIG_DIR:-$HOME/.claude}/hooks/session-start.mjs\""
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_CONFIG_DIR:-$HOME/.claude}/hooks/pre-tool-use.mjs\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_CONFIG_DIR:-$HOME/.claude}/hooks/post-tool-use.mjs\""
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_CONFIG_DIR:-$HOME/.claude}/hooks/post-tool-use-failure.mjs\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_CONFIG_DIR:-$HOME/.claude}/hooks/persistent-mode.mjs\""
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_CONFIG_DIR:-$HOME/.claude}/hooks/code-simplifier.mjs\""
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "sh ${CLAUDE_CONFIG_DIR:-$HOME/.claude}/hud/find-node.sh ${CLAUDE_CONFIG_DIR:-$HOME/.claude}/hud/omc-hud.mjs"
+  },
+  "effortLevel": "high",
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "light-ansi",
+  "tui": "fullscreen"
+}
