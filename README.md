@@ -5,14 +5,10 @@ Personal Claude Code config — workflow skills, coding rules, personal CLAUDE.m
 ## Install on a new machine
 
 ```bash
-# 1. Install oh-my-claudecode (the framework)
-curl -fsSL https://raw.githubusercontent.com/getomni/oh-my-claudecode/main/install.sh | bash
-
-# 2. Clone and install everything (config + plugins + skills)
-git clone https://github.com/krittapastrycode/krittapastrycode-skills.git
-cd krittapastrycode-skills
-bash install.sh
+curl -fsSL https://raw.githubusercontent.com/krittapastrycode/krittapastrycode-skills/main/install.sh | bash
 ```
+
+That's it. Installs OMC, config files, 9arm-skills, matt-pocock-skills, karpathy-guidelines, and ponytail in one shot.
 
 ## What's inside
 
