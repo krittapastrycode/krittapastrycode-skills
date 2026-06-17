@@ -1,7 +1,6 @@
 # krittapastrycode-skills
 
 Personal Claude Code config — workflow skills, coding rules, personal CLAUDE.md, and plugins.
-Inspired by [9arm workflow](https://github.com/9arm) + [Andrej Karpathy's LLM coding guidelines](https://x.com/karpathy/status/2015883857489522876).
 
 ## Install on a new machine
 
@@ -9,7 +8,7 @@ Inspired by [9arm workflow](https://github.com/9arm) + [Andrej Karpathy's LLM co
 # 1. Install oh-my-claudecode (the framework)
 curl -fsSL https://raw.githubusercontent.com/getomni/oh-my-claudecode/main/install.sh | bash
 
-# 2. Clone and install everything (config + plugins)
+# 2. Clone and install everything (config + plugins + skills)
 git clone https://github.com/krittapastrycode/krittapastrycode-skills.git
 cd krittapastrycode-skills
 bash install.sh
@@ -23,35 +22,66 @@ bash install.sh
 | `skill.md` | Personal workflow skills (9arm style) |
 | `rules/` | Coding standards for web, TypeScript, PHP, Go, Python, etc. |
 | `settings.json` | Claude Code permissions |
-| `install.sh` | One-command installer (config + plugins) |
+| `install.sh` | One-command installer (config + plugins + skills) |
 
-## Plugins installed
+## Everything installed
 
-| Plugin | Marketplace source | Skills | Description |
-|--------|-------------------|--------|-------------|
-| `andrej-karpathy-skills` | `multica-ai/andrej-karpathy-skills` | `karpathy-guidelines` | LLM coding discipline from Andrej Karpathy |
-| `ponytail` | `DietrichGebert/ponytail` | `ponytail`, `ponytail-audit`, `ponytail-debt`, `ponytail-help`, `ponytail-review` | Lazy senior dev mode — YAGNI, stdlib first |
+### Frameworks
+
+| Name | Source | Install method |
+|------|--------|---------------|
+| oh-my-claudecode (OMC) | `getomni/oh-my-claudecode` | `curl install.sh` |
+
+### Plugins (via `claude plugin install`)
+
+| Plugin | Source | Skills |
+|--------|--------|--------|
+| `andrej-karpathy-skills` | `multica-ai/andrej-karpathy-skills` | `karpathy-guidelines` |
+| `ponytail` | `DietrichGebert/ponytail` | `ponytail`, `ponytail-audit`, `ponytail-debt`, `ponytail-help`, `ponytail-review` |
+
+### Skills packs (via `npx skills add`)
+
+| Pack | Source | Skills |
+|------|--------|--------|
+| 9arm-skills | `thananon/9arm-skills` | `debug-mantra`, `scrutinize`, `post-mortem`, `management-talk`, `qwen-agent`, `qwenchance` |
+| Matt Pocock skills | `mattpocock/skills` | `ask-matt`, `grill-with-docs`, `triage`, `improve-codebase-architecture`, `setup-matt-pocock-skills`, `to-issues`, `to-prd`, `prototype`, `tdd`, `grill-me`, `handoff`, `teach`, `git-guardrails-claude-code`, `setup-pre-commit`, and more |
+
+## Skills reference
 
 ### Karpathy Guidelines (`/andrej-karpathy-skills:karpathy-guidelines`)
-
-4 principles to reduce LLM coding mistakes:
-
 1. **Think Before Coding** — surface assumptions, ask when unclear
 2. **Simplicity First** — minimum code, nothing speculative
 3. **Surgical Changes** — touch only what you must
 4. **Goal-Driven Execution** — define verifiable success criteria before looping
 
-### Ponytail
-
-Lazy senior dev mode. Forces simplest solution. YAGNI + stdlib first.
+### Ponytail (`/ponytail:ponytail`)
+Lazy senior dev mode. YAGNI + stdlib first.
 
 | Skill | Usage |
 |-------|-------|
 | main | `/ponytail:ponytail` |
-| audit existing code for overengineering | `/ponytail:ponytail-audit` |
-| identify & prioritize tech debt | `/ponytail:ponytail-debt` |
-| help with ponytail usage | `/ponytail:ponytail-help` |
-| review code for unnecessary complexity | `/ponytail:ponytail-review` |
+| audit for overengineering | `/ponytail:ponytail-audit` |
+| identify tech debt | `/ponytail:ponytail-debt` |
+| help | `/ponytail:ponytail-help` |
+| review complexity | `/ponytail:ponytail-review` |
+
+### 9arm-skills (`thananon/9arm-skills`)
+| Skill | Usage |
+|-------|-------|
+| debug-mantra | `/debug-mantra` |
+| scrutinize | `/scrutinize` |
+| post-mortem | `/post-mortem` |
+| management-talk | `/management-talk` |
+
+### Matt Pocock skills (`mattpocock/skills`)
+| Skill | Usage |
+|-------|-------|
+| grill-me | `/grill-me` |
+| tdd | `/tdd` |
+| to-issues | `/to-issues` |
+| to-prd | `/to-prd` |
+| improve-codebase-architecture | `/improve-codebase-architecture` |
+| handoff | `/handoff` |
 
 ## Update config
 
